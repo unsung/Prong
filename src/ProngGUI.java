@@ -7,6 +7,8 @@ import java.awt.event.KeyListener;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 
+import wiiremotej.WiiRemote;
+import wiiremotej.WiiRemoteJ;
 import de.yadrone.base.ARDrone;
 
 
@@ -15,8 +17,19 @@ public class ProngGUI extends JFrame{
 	JTextArea display = new JTextArea();
 	String Text = "Log:\n";
 	ARDrone drone = new ARDrone();
+	WiiRemote remote = null;
 	
 	public ProngGUI(){
+		while (remote == null) {
+			try {
+				remote = WiiRemoteJ.findRemote();
+
+			} catch(Exception e) {
+				remote = null;
+                e.printStackTrace();
+                System.out.println("Failed to connect remote. Trying again.");
+            }
+		}
 		this.setLayout(new BorderLayout());
 		this.add(display, BorderLayout.CENTER);
 		display.setEditable(false);
