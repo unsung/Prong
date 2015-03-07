@@ -13,6 +13,9 @@ public class Field {
 		entities = new ArrayList<Entity>();
 	}
 	
+	public Field(){
+		this(500, 500);
+	}
 	public void addEntity(Entity e) { entities.add(e); }
 	
 	public List<Entity> getEntities() { return entities; }

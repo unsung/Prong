@@ -20,22 +20,22 @@ public class ProngViewGUI extends JFrame{
 			@Override
 			public void keyPressed(KeyEvent arg0) {
 				if(arg0.getKeyCode() == KeyEvent.VK_LEFT){
-					ViewPanel.decrementX();
+					ViewPanel.moveLeft();
 					ProngViewGUI.this.repaint();
 				}
 				
 				if(arg0.getKeyCode() == KeyEvent.VK_RIGHT){
-					ViewPanel.incrementX();
+					ViewPanel.moveRight();
 					ProngViewGUI.this.repaint();
 				}
 				
 				if(arg0.getKeyCode() == KeyEvent.VK_UP){
-					ViewPanel.decrementY();
+					ViewPanel.moveDown();
 					ProngViewGUI.this.repaint();
 				}
 				
 				if(arg0.getKeyCode() == KeyEvent.VK_DOWN){
-					ViewPanel.incrementY();
+					ViewPanel.moveUp();
 					ProngViewGUI.this.repaint();
 				}
 				

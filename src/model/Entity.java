@@ -1,6 +1,8 @@
 package model;
 
-public abstract class Entity {
+import java.util.Observable;
+
+public abstract class Entity extends Observable {
 	private int x;
 	private int y;
 	private int vx;
@@ -31,13 +33,25 @@ public abstract class Entity {
 	
 	public int getH() { return h; }
 	
-	public void setX(int x) { this.x = x; }
+	public void setX(int x) {
+		this.x = x;
+		notifyObservers();
+	}
 	
-	public void setY(int y) { this.y = y; }
+	public void setY(int y) {
+		this.y = y;
+		notifyObservers();
+	}
 	
-	public void setVx(int vx) {this.vx = vx; }
+	public void setVx(int vx) {
+		this.vx = vx;
+		notifyObservers();
+	}
 	
-	public void setVy(int vy){ this.vy = vy; }
+	public void setVy(int vy) {
+		this.vy = vy;
+		notifyObservers();
+	}
 	
 	protected void setW(int w){ this.w = w; }
 	
