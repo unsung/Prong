@@ -63,6 +63,48 @@ public class ProngGUI extends JFrame{
 				display.setText(Text);
 				repaint();
 				break;
+			case KeyEvent.VK_0:
+				drone.landing();
+				Text+="Go Down\n";
+				display.setText(Text);
+				repaint();
+				break;
+			case KeyEvent.VK_R:
+				drone.spinRight();
+				Text+="Go Down\n";
+				display.setText(Text);
+				repaint();
+				break;
+			case KeyEvent.VK_L:
+				drone.spinLeft();
+				Text+="Go Down\n";
+				display.setText(Text);
+				repaint();
+				break;
+			case KeyEvent.VK_F:
+				drone.forward();
+				Text+="Go Down\n";
+				display.setText(Text);
+				repaint();
+				break;
+			case KeyEvent.VK_B:
+				drone.backward();
+				Text+="Go Down\n";
+				display.setText(Text);
+				repaint();
+				break;
+			case KeyEvent.VK_S:
+				drone.stop();
+				Text+="Go Down\n";
+				display.setText(Text);
+				repaint();
+				break;
+			case KeyEvent.VK_T:
+				drone.takeOff();
+				Text+="Go Down\n";
+				display.setText(Text);
+				repaint();
+				break;
 			default: break;
 			
 			
