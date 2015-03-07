@@ -1,18 +1,15 @@
 package model;
-import java.util.List;
-import java.util.ArrayList;
 
 public class Field {
-	private int w;
-	private int h;
-	private List<Entity> entities;
+	private int width;
+	private int height;
 	
 	public Field(int w, int h){
-		this.w = w;
-		this.h = h;
-		entities = new ArrayList<Entity>();
+		this.width = w;
+		this.height = h;
 	}
 	
+<<<<<<< HEAD
 	public Field(){
 		this(500, 500);
 	}
@@ -25,7 +22,14 @@ public class Field {
 	public int getW() { return w; }
 	
 	public void setW(int w) { this.w = w; }
+=======
+	public void setWidth(int w){
+		this.width = w;
+	}
+>>>>>>> parent of 267c0ac... added controllers
 	
-	public void setH(int h) { this.h = h; }
+	public void setHeight(int h){
+		this.height = h;
+	}
 
 }
