@@ -3,11 +3,11 @@ package model;
 public class Racket extends Entity {
 	public static enum Orient { VERTICAL, HORIZONTAL }
 	public static final int L_DEFAULT = 5;
-	private int l;
+	private int length;
 
 	public Racket(int x, int y, int l, Orient o) {
 		super(x,y);
-		this.l = l;
+		this.length = l;
 		switch(o) {
 		case VERTICAL:
 			setH(l);
@@ -33,5 +33,5 @@ public class Racket extends Entity {
 		this(0,0);
 	}
 	
-	public int getL() { return l; }
+	public int getL() { return length; }
 }
