@@ -5,69 +5,42 @@ public abstract class Entity {
 	private int y;
 	private int vx;
 	private int vy;
-	private int width;
-	private int height;
+	private int w;
+	private int h;
 	
-	public Entity(int x, int y)
-	{
+	public Entity(int x, int y) {
 		this.x = x;
 		this.y = y;
 		vx = vy = 0;
-		width = height = 1;
+		w = h = 1;
 	}
 	
-	public Entity(){
+	public Entity() {
 		this(0,0);
 	}
 	
-	public int getX(){
-		return x;
-	}
+	public int getX() { return x; }
 	
-	public int getY(){
-		return y;
-	}
+	public int getY() { return y; }
 	
-	public int getXVelocity(){
-		return vx;
-	}
+	public int getVx() { return vx; }
 	
-	public int getYVelocity(){
-		return vy;
-	}
+	public int getVy() { return vy; }
 	
-	public int getWidth(){
-		return width;
-	}
+	public int getW() { return w; }
 	
-	public int getHeight()
-	{
-		return height;
-	}
+	public int getH() { return h; }
 	
-	public void setX(int x){
-		this.x = x;
-	}
+	public void setX(int x) { this.x = x; }
 	
-	public void setY(int y){
-		this.y = y;
-	}
+	public void setY(int y) { this.y = y; }
 	
-	public void setXVelocity(int vx){
-		this.vx = vx;
-	}
+	public void setVx(int vx) {this.vx = vx; }
 	
-	public void setYVelocity(int vy){
-		this.vy = vy;
-	}
+	public void setVy(int vy){ this.vy = vy; }
 	
-	public void setWidth(int width){
-		this.width = width;
-	}
+	protected void setW(int w){ this.w = w; }
 	
-	public void setHeight(int height){
-		this.height = height;
-	}
-	
+	protected void setH(int h){ this.h = h; }
 
 }
