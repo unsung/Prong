@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+<<<<<<< HEAD
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/yadrone_032.jar"/>
 	<classpathentry kind="lib" path="lib/WiiRemoteJ.jar"/>
 	<classpathentry kind="lib" path="DroneLib/yadrone_032.jar"/>
+=======
+	<classpathentry kind="src" path="src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/home/unsung/Prong"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/yadrone_032.jar"/>
+	<classpathentry kind="lib" path="wiiusej.jar"/>
+>>>>>>> d3f3fd99de9b830a8b00f45e9c93928df62ee34e
 	<classpathentry kind="output" path="bin"/>
 </classpath>
